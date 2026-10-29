@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阆中AI寻宝 · 阆中美食</title>
+<link href="css/css.css?v=44" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/iconoir@latest/css/iconoir.css"></head>
+<body>
+<div class="skeleton-overlay" id="skeleton">
+  <div class="skeleton-nav">
+    <div class="skeleton-nav-left">
+      <div class="skeleton-nav-dot"></div>
+      <div class="skeleton-nav-title"></div>
+    </div>
+    <div class="skeleton-nav-links">
+      <div class="skeleton-nav-link"></div>
+      <div class="skeleton-nav-link"></div>
+      <div class="skeleton-nav-link"></div>
+      <div class="skeleton-nav-link"></div>
+      <div class="skeleton-nav-link"></div>
+    </div>
+  </div>
+  <div class="skeleton-content">
+    <div style="text-align:center; padding:40px 0 20px;">
+      <div class="skeleton-title" style="margin:0 auto 20px;"></div>
+      <div class="skeleton-text" style="margin:0 auto;"></div>
+    </div>
+    <div style="height:300px; display:flex; justify-content:center; align-items:center; gap:20px; margin:40px 0;">
+      <div class="skeleton-card" style="width:200px; height:160px;"></div>
+      <div class="skeleton-card" style="width:260px; height:210px;"></div>
+      <div class="skeleton-card" style="width:200px; height:160px;"></div>
+    </div>
+    <div style="padding:0 80px; margin:40px 0;">
+      <div class="skeleton-text" style="width:100%; margin-bottom:12px;"></div>
+      <div class="skeleton-text" style="width:100%; margin-bottom:12px;"></div>
+      <div class="skeleton-text" style="width:100%; margin-bottom:12px;"></div>
+      <div class="skeleton-text" style="width:80%;"></div>
+    </div>
+    <div class="skeleton-banner" style="height:250px; margin:0 40px 40px;"></div>
+  </div>
+</div>
+<div class="main">
+	
+	<div class="page-banner chat-banner">
+    <div class="banner-face">
+      <svg viewBox="0 0 320 380">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="25">
+          <g class="face__eyes" transform="translate(0,112.5)">
+            <g transform="translate(15,0)">
+              <polyline class="face__eye-lid" points="37,0 0,120 75,120"></polyline>
+              <polyline class="face__pupil" points="55,120 55,155" stroke-dasharray="35 35"></polyline>
+            </g>
+            <g transform="translate(230,0)">
+              <polyline class="face__eye-lid" points="37,0 0,120 75,120"></polyline>
+              <polyline class="face__pupil" points="55,120 55,155" stroke-dasharray="35 35"></polyline>
+            </g>
+          </g>
+          <rect class="face__nose" x="132.5" y="112.5" width="55" height="155" rx="4" ry="4"></rect>
+          <g transform="translate(65,334)" stroke-dasharray="102 102">
+            <path class="face__mouth-left" d="M 0 30 C 0 30 40 0 95 0"></path>
+            <path class="face__mouth-right" d="M 95 0 C 150 0 190 30 190 30"></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="banner-text">
+      <h2>特 色 美 食</h2>
+      <p>阆中美食源远流长，融合四川麻辣与陕南咸香的独特风味</p>
+    </div>
+  </div>
+	
+  <div class="nav">
+   
+	  <table width="95%" height="100%" border="0" align="center">
+  <tbody>
+	<tr>
+	  <tb>&nbsp;</tb>
+	</tr>
+    <tr>
+      <td width="20%">
+		<div class="nav-brand">
+      <i class="iconoir-map-pin"></i> 阆中AI寻宝
+    </div>
+		</td>
+      <td width="20%">
+		  <div class="nav-links">
+      <a href="index.html"><i class="iconoir-home"></i> 首页</a>
+      <a href="map.html"><i class="iconoir-map-pin"></i> 寻宝路线</a>
+      <a href="detail.html"><i class="iconoir-leaf"></i> 景点详情</a>
+      <a href="food.html" class="on"><i class="iconoir-cutlery"></i> 特色美食</a>
+      <a href="chat.html"><i class="iconoir-chat-bubble"></i> AI导游</a>
+    </div>
+		</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+  
+  <div class="food-intro">
+    <h3 id="foodTitle">张飞牛肉</h3>
+    <div class="food-desc-row">
+      <div class="food-desc-line-left"></div>
+      <p id="foodDesc">外黑内红，咸香干香，阆中第一名吃</p>
+      <div class="food-desc-line-right"></div>
+    </div>
+  </div>
+  <div class="food-grid" id="foodGrid">
+    <div class="food-card">
+      <div class="img-slot">
+        <img src="images/food1.jpg" alt="张飞牛肉">
+      </div>
+    </div>
+    <div class="food-card">
+      <div class="img-slot">
+        <img src="images/food2.jpg" alt="保宁醋">
+      </div>
+    </div>
+    <div class="food-card">
+      <div class="img-slot">
+        <img src="images/food3.jpg" alt="保宁蒸馍">
+      </div>
+    </div>
+    <div class="food-card">
+      <div class="img-slot">
+        <img src="images/food4.jpg" alt="怪味胡豆">
+      </div>
+    </div>
+    <div class="food-card">
+      <div class="img-slot">
+        <img src="images/food5.jpg" alt="芝麻饼">
+      </div>
+    </div>
+    <div class="food-card">
+      <div class="img-slot">
+        <img src="images/food6.jpg" alt="保宁醋">
+      </div>
+    </div>
+    <div class="food-card">
+      <div class="img-slot">
+        <img src="images/food7.jpg" alt="传统糕点">
+      </div>
+    </div>
+    <div class="food-card">
+      <div class="img-slot">
+        <img src="images/food8.jpg" alt="张飞牛肉">
+      </div>
+    </div>
+  </div>
+  <div class="food-description">
+    <p>阆中美食源远流长，融合了四川麻辣与陕南咸香的独特风味。这里有中国四大名醋之一的保宁醋，有嚼劲十足的张飞牛肉，还有外酥里嫩的蒸馍凉面。每一口都是古城千年的味道记忆。</p>
+  </div>
+  <div class="food-stage">
+    <img src="images/food-cover.jpg" alt="阆中美食">
+    <video class="stage-video" muted loop playsinline preload="auto" src="images/food_web.mp4"></video>
+    <div class="stage-caption">
+      <div class="stage-title">阆中美食 · 舌尖上的古城</div>
+      <div class="stage-hint">品味阆中，感受千年美食小城</div>
+    </div>
+  </div>
+  <div class="section-block" style="text-align:center; display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
+    <a href="detail.html" class="btn btn-outline">返回景点详情</a>
+    <a href="chat.html" class="btn">问 AI 导游</a>
+  </div>
+  <div class="foot">
+    《阆中 AI 寻宝》Web 交互
+  </div>
+</div>
+<script src="js/main.js"></script>
+<script>
+
+(function () {
+  var stage = document.querySelector(".food-stage");
+  var video = stage.querySelector("video");
+  var img = stage.querySelector("img");
+  function start() {
+    img.style.opacity = "0";
+    video.style.opacity = "1";
+    video.play().catch(function(){});
+  }
+  function stop() {
+    video.pause();
+    img.style.opacity = "1";
+    video.style.opacity = "0";
+  }
+  stage.addEventListener("mouseenter", start);
+  stage.addEventListener("mouseleave", stop);
+})();
+
+(function () {
+  var cards = document.querySelectorAll(".food-card");
+  var total = cards.length;
+  var currentIndex = 0;
+  
+  var foodData = [
+    { title: "张飞牛肉", desc: "外黑内红，咸香干香，阆中第一名吃" },
+    { title: "保宁醋", desc: "药曲酿造，醇厚回甘，四大名醋之一" },
+    { title: "保宁蒸馍", desc: "松软香甜，淡淡桂花，百年老字号" },
+    { title: "怪味胡豆", desc: "麻辣酥脆，越嚼越香，古城网红零食" },
+    { title: "芝麻饼", desc: "满口香酥，芝麻浓郁，烤出来的老味道" },
+    { title: "保宁醋", desc: "药曲酿造，醇厚回甘，四大名醋之一" },
+    { title: "传统糕点", desc: "古法制作，甜而不腻，阆中老味道" },
+    { title: "张飞牛肉", desc: "外黑内红，咸香干香，阆中第一名吃" }
+  ];
+  var foodTitle = document.querySelector("#foodTitle");
+  var foodDesc = document.querySelector("#foodDesc");
+  function updateCarousel() {
+    cards.forEach(function (card, i) {
+      
+      var diff = i - currentIndex;
+      if (diff > total / 2) diff -= total;
+      if (diff < -total / 2) diff += total;
+      var absDiff = Math.abs(diff);
+      
+      var translateX = diff * 150;
+      var scale = 1 - absDiff * 0.08;
+      var rotateY = -diff * 10;
+      var opacity = absDiff > 3 ? 0 : 1 - absDiff * 0.15;
+      var zIndex = 10 - absDiff;
+      card.style.transform = "translateX(" + translateX + "px) scale(" + scale + ") rotateY(" + rotateY + "deg)";
+      card.style.opacity = opacity;
+      card.style.zIndex = zIndex;
+      
+      if (diff === 0) {
+        card.style.borderColor = "rgba(168,139,250,.4)";
+        card.style.boxShadow = "inset 0 1px 0 rgba(255,255,255,.08), 0 24px 48px rgba(0,0,0,.45), 0 0 0 1px rgba(168,139,250,.2), 0 12px 32px rgba(139,92,246,.15)";
+      } else {
+        card.style.borderColor = "rgba(168,139,250,.15)";
+        card.style.boxShadow = "inset 0 1px 0 rgba(255,255,255,.06), 0 12px 32px rgba(0,0,0,.3), 0 2px 8px rgba(0,0,0,.15)";
+      }
+    });
+    
+    foodTitle.textContent = foodData[currentIndex].title;
+    foodDesc.textContent = foodData[currentIndex].desc;
+  }
+  
+  updateCarousel();
+  
+  setInterval(function () {
+    currentIndex++;
+    if (currentIndex >= total) currentIndex = 0;
+    updateCarousel();
+  }, 3000);
+  
+  cards.forEach(function (card, i) {
+    card.addEventListener("click", function () {
+      currentIndex = i;
+      updateCarousel();
+    });
+  });
+})();
+</script>
+</body>
+</html>

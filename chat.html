@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阆中AI寻宝 · AI导游</title>
+<link href="css/css.css?v=44" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/iconoir@latest/css/iconoir.css"></head>
+<body>
+<div class="skeleton-overlay" id="skeleton">
+  <div class="skeleton-nav">
+    <div class="skeleton-nav-left">
+      <div class="skeleton-nav-dot"></div>
+      <div class="skeleton-nav-title"></div>
+    </div>
+    <div class="skeleton-nav-links">
+      <div class="skeleton-nav-link"></div>
+      <div class="skeleton-nav-link"></div>
+      <div class="skeleton-nav-link"></div>
+      <div class="skeleton-nav-link"></div>
+      <div class="skeleton-nav-link"></div>
+    </div>
+  </div>
+  <div class="skeleton-content">
+    <div style="text-align:center; padding:40px 0 30px;">
+      <div class="skeleton-title" style="margin:0 auto 16px;"></div>
+      <div class="skeleton-text" style="margin:0 auto; width:50%;"></div>
+    </div>
+    <div style="height:400px; margin:0 60px; border-radius:16px; background: linear-gradient(90deg, rgba(168,139,250,.1) 25%, rgba(168,139,250,.2) 50%, rgba(168,139,250,.1) 75%); background-size: 200% 100%; animation: skeletonShimmer 1.5s infinite;"></div>
+    <div style="height:50px; margin:20px 60px; border-radius:12px; background: linear-gradient(90deg, rgba(168,139,250,.1) 25%, rgba(168,139,250,.2) 50%, rgba(168,139,250,.1) 75%); background-size: 200% 100%; animation: skeletonShimmer 1.5s infinite;"></div>
+  </div>
+</div>
+<div class="main">
+  <div class="page-banner chat-banner">
+    <div class="banner-face">
+      <svg viewBox="0 0 320 380">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="25">
+          <g class="face__eyes" transform="translate(0,112.5)">
+            <g transform="translate(15,0)">
+              <polyline class="face__eye-lid" points="37,0 0,120 75,120"></polyline>
+              <polyline class="face__pupil" points="55,120 55,155" stroke-dasharray="35 35"></polyline>
+            </g>
+            <g transform="translate(230,0)">
+              <polyline class="face__eye-lid" points="37,0 0,120 75,120"></polyline>
+              <polyline class="face__pupil" points="55,120 55,155" stroke-dasharray="35 35"></polyline>
+            </g>
+          </g>
+          <rect class="face__nose" x="132.5" y="112.5" width="55" height="155" rx="4" ry="4"></rect>
+          <g transform="translate(65,334)" stroke-dasharray="102 102">
+            <path class="face__mouth-left" d="M 0 30 C 0 30 40 0 95 0"></path>
+            <path class="face__mouth-right" d="M 95 0 C 150 0 190 30 190 30"></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="banner-text">
+      <h2>AI 虚 拟 导 游</h2>
+      <p>和"小阆"聊一聊阆中的景点、路线与美食</p>
+    </div>
+  </div>
+  <div class="nav">
+    		
+<table width="95%" height="100%" border="0" align="center">
+  <tbody>
+	<tr>
+	  <tb>&nbsp;</tb>
+	</tr>
+    <tr>
+      <td width="20%">
+		<div class="nav-brand">
+      <i class="iconoir-map-pin"></i> 阆中AI寻宝
+    </div>
+		</td>
+      <td width="20%">
+		  <div class="nav-links">
+      <a href="index.html"><i class="iconoir-home"></i> 首页</a>
+      <a href="map.html"><i class="iconoir-map-pin"></i> 寻宝路线</a>
+      <a href="detail.html"><i class="iconoir-leaf"></i> 景点详情</a>
+      <a href="food.html"><i class="iconoir-cutlery"></i> 特色美食</a>
+      <a href="chat.html" class="on"><i class="iconoir-chat-bubble"></i> AI导游</a>
+    </div>
+		</td>
+    </tr>
+  </tbody>
+</table>
+	  
+  </div>
+  <div class="chat-wrap">
+    <div class="chat-box">
+      <div class="chat-head">
+        <div class="img-slot slot-avatar">
+          <img src="images/guide.jpg" alt="导游小阆">
+         
+        </div>
+        <div>
+          <div class="chat-name">小阆 · 虚拟导游</div>
+          <div class="chat-status">在线 · 由智谱清言 GLM 驱动</div>
+        </div>
+      </div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="quick-ask">
+        <button onclick="askQuick('中天楼值得上去吗？')">中天楼值得上去吗？</button>
+        <button onclick="askQuick('帮我规划一条一天的游览路线')">一日游路线</button>
+        <button onclick="askQuick('阆中有什么必吃的美食？')">必吃美食</button>
+        <button onclick="askQuick('张飞和阆中有什么关系？')">张飞与阆中</button>
+      </div>
+      <div class="chat-bar">
+        <input type="text" id="chatInput" placeholder="问问小阆：景点、路线、美食…" maxlength="200" autocomplete="off">
+        <button type="button" class="chat-send" id="chatSend">发送</button>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:12px;color:#6f9cc7;margin-top:12px;">
+		小阆祝你旅途愉快呀! ^_^
+    </p>
+  </div>
+  <div class="foot">
+    《阆中 AI 寻宝》Web 交互
+  </div>
+</div>
+<script src="js/main.js"></script>
+<script src="js/chat.js"></script>
+<script>
+  function askQuick(q) {
+    var input = document.getElementById("chatInput");
+    var send = document.getElementById("chatSend");
+    input.value = q;
+    send.click();
+  }
+</script>
+</body>
+</html>
